@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WILM progress</title>
+<meta name="description" content="Phone dashboard of what is actually moving across WILM projects. Paper and vault facts only. No invented revenue.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #101114;
+    --card: #181b20;
+    --line: #2c3138;
+    --text: #e6e2da;
+    --muted: #9b958b;
+    --dim: #6f6a62;
+    --link: #d7c4a3;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 1.25rem 1rem 3rem;
+    font: 16px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header { margin-bottom: 1.25rem; }
+  h1 {
+    font-size: 1.35rem;
+    font-weight: 620;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.35rem;
+  }
+  .asof { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.75rem; }
+  .read {
+    margin: 0;
+    padding: 0.75rem 0.85rem;
+    border-left: 2px solid #3d4450;
+    color: var(--text);
+    background: #14171c;
+  }
+  main { display: flex; flex-direction: column; gap: 0.75rem; }
+  article {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 0.9rem 0.95rem 1rem;
+  }
+  .top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.35rem;
+  }
+  h2 { font-size: 1.05rem; margin: 0; font-weight: 620; }
+  .pill {
+    flex: none;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    font-weight: 650;
+    padding: 0.18rem 0.45rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+  }
+  .pill.paper { color: #e2c27a; border-color: #5a4a28; }
+  .pill.live { color: #b7c9a8; border-color: #3d4a34; }
+  .pill.wait { color: #c4b7a2; border-color: #4a4336; }
+  .pill.off { color: #8d8880; }
+  .what { margin: 0 0 0.55rem; color: var(--muted); }
+  ul { margin: 0; padding-left: 1.1rem; }
+  li { margin: 0.28rem 0; }
+  li strong { font-weight: 620; }
+  a { color: var(--link); }
+  .links { margin-top: 0.65rem; }
+  .links a { display: inline-block; margin-right: 0.85rem; }
+  footer {
+    margin-top: 1.4rem;
+    color: var(--dim);
+    font-size: 0.82rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>WILM progress</h1>
+  <p class="asof">As of 2026-10-02 9:52 PM PT</p>
+  <p class="read">Tonight the Desk paper book is still marking with new entries frozen, and Stack Scorecard’s beast #62 went live earlier today. Poly, Studio, and X are idle. Geo Bid Digest is not approved.</p>
+</header>
+<main>
+  <article>
+    <div class="top">
+      <h2>Desk</h2>
+      <span class="pill paper">PAPER</span>
+    </div>
+    <p class="what">Kraken CLI paper book only. Live capital is still RED.</p>
+    <ul>
+      <li>Workspace <strong>desk-explore-f01</strong>. Published equity <strong>$4,239.49</strong> vs <strong>$5,000.00</strong> start (stamp 2026-10-02 9:48 PM PT). That stamp is CLI equity $4,152.51 plus a $86.98 adjustment.</li>
+      <li>Fills <strong>312</strong> · open lots <strong>25</strong> · FIFO completed <strong>257</strong>.</li>
+      <li>New entries <strong>frozen</strong> (disposition-only). Breaker is blocking new risk: <strong>14 positions &gt; max 8</strong> (2026-10-02 9:49 PM PT).</li>
+      <li>Paper Day-30 hard date <strong>2026-10-17 PT</strong> (5k reset 2026-09-17 3:32 PM PT). Live still needs that date, breakers, and a Meik RED.</li>
+      <li>Research: RLC-01 slot <strong>WAITING</strong> (2026-10-02 8:10 PM PT). D3 logger <strong>5/30 days</strong> (day 0 2026-09-28; not study-ready). ADM-01 study-eligible <strong>0/20</strong>. B0-FINAL is the approved incumbent; live still RED.</li>
+    </ul>
+    <p class="links"><a href="https://jamaldenberg.github.io/desk-paper-dash/">Paper dashboard</a></p>
+  </article>
+
+  <article>
+    <div class="top">
+      <h2>Stack Scorecard</h2>
+      <span class="pill live">LIVE</span>
+    </div>
+    <p class="what">Northstack site. North star is ≥ $50k/mo. No revenue number is shown here.</p>
+    <ul>
+      <li>Content ships only on <strong>CLIENT-QA GREEN</strong>.</li>
+      <li>Latest beast is <strong>#62</strong>, Make Free vs Core, live 2026-10-02 ~5:12 PM PT. Also live: #61 Make Pro vs Teams (same day), #60 Make Core vs Pro, #59 Make credits and operations. Nothing higher than #62 is in the vault.</li>
+      <li>Frozen iPaaS totals, unchanged: Make <strong>410</strong> · n8n Cloud <strong>368</strong> · Zapier <strong>353</strong> · n8n self-host <strong>382</strong>.</li>
+    </ul>
+    <p class="links">
+      <a href="https://stackscorecard.com">stackscorecard.com</a>
+      <a href="https://stackscorecard.com/guides/make-free-vs-core/">Beast #62</a>
+    </p>
+  </article>
+
+  <article>
+    <div class="top">
+      <h2>Poly</h2>
+      <span class="pill off">MOTHBALLED</span>
+    </div>
+    <p class="what">Paper lane parked 2026-09-18 PT until a legal live route and a Meik RED.</p>
+    <ul>
+      <li>No paper sim, no improve loop, no active work.</li>
+    </ul>
+  </article>
+
+  <article>
+    <div class="top">
+      <h2>Studio</h2>
+      <span class="pill off">PAUSED</span>
+    </div>
+    <p class="what">Faceless YouTube (disaster and failure history). Paused by Meik. No active work.</p>
+    <ul>
+      <li>Contract is still the faceless lane. Do not unpause from this page. No uploads.</li>
+    </ul>
+  </article>
+
+  <article>
+    <div class="top">
+      <h2>X research</h2>
+      <span class="pill wait">WAITING</span>
+    </div>
+    <p class="what">Primary niche locked: freelancer and micro-agency late pay and cash flow.</p>
+    <ul>
+      <li>Rename target <strong>@getpaidlab</strong>. Still <strong>@wilm_research</strong>. Rename failed 2026-09-30 9:53 PM PT because the account is suspended.</li>
+      <li>No posts and no follows until Meik and Commander green.</li>
+      <li>Zero Stack, Make, Zapier, or n8n mentions on this account.</li>
+    </ul>
+  </article>
+
+  <article>
+    <div class="top">
+      <h2>Yield</h2>
+      <span class="pill wait">WATCH</span>
+    </div>
+    <p class="what">Canadian cash-yield watch. Not a live trading book. Sub-$1k sleeve.</p>
+    <ul>
+      <li>Weekday check 2026-10-02: everyday non-reg still <strong>Oaken 2.80%</strong> for sub-$1k. TFSA ongoing ranking flipped to <strong>WealthONE 3.00%</strong> vs Oaken TFSA 2.80%.</li>
+      <li>No trades. Formal rate review is the first Monday each month; next named review is first Monday of November, or after the BoC date 2026-10-28.</li>
+    </ul>
+  </article>
+
+  <article>
+    <div class="top">
+      <h2>Geo Bid Digest</h2>
+      <span class="pill wait">WAITING</span>
+    </div>
+    <p class="what">Direction still waiting on Meik: yes, tweak, or kill. Not approved. Not a live product.</p>
+    <ul>
+      <li>Drafts only. No room and no agents until Meik says yes. Gates locked 2026-09-18 PT.</li>
+    </ul>
+  </article>
+</main>
+<footer>
+  Static page. Times are Pacific (PT). Sources are listed in STATUS.md. Nothing here is a revenue claim.
+</footer>
+</body>
+</html>
