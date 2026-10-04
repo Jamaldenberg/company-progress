@@ -1,40 +1,40 @@
 # STATUS: where each fact came from
 
-Page as-of: 2026-10-03 4:28 PM PT. Desk and Stack on the card follow the verified live brief for this refresh. No revenue, traffic, or new scores were added. The ops-brain vault was not on this machine. Yield and Geo Bid Digest keep the prior wording. The 1:06 PM desk equity stamp is not on the card.
+Page as-of: 2026-10-03 7:40 PM PT. Desk and Stack on the card follow the verified live brief for this refresh. No revenue, traffic, scores, or a newer equity figure were added. The ops-brain vault was not on this machine. Yield and Geo Bid Digest keep the prior wording.
 
 ## Company read
 
-Afternoon update. Desk paper keep-alive ~4:21 PM PT is HEALTHY_QUIET, and new entries are still frozen. Stack beast #63 is live; beast #64 is in flight. Poly mothballed, Studio paused, X not posting, Geo direction not decided. Those four gates were not changed.
+Evening update. Desk paper keep-alive last verified HEALTHY_QUIET, and new entries are still frozen. Stack beast #64 is live. Poly mothballed, Studio paused, X not posting, Geo Bid Digest not approved. Those four gates were not changed.
 
 ## Desk (PAPER)
 
-Verified keep-alive ~4:21 PM PT. Not re-read from ops-brain on this machine.
+Carried from the prior card except the later keep-alive note. Not re-read from ops-brain on this machine. No newer equity was verified, so the 4:21 PM figure stays.
 
 - Kraken CLI paper only. Live capital is still RED.
-- Workspace `desk-explore-f01` is carried from the prior page. The 4:21 PM brief did not restate it.
-- Keep-alive ~4:21 PM PT `HEALTHY_QUIET`.
-- Equity about $4,170.39 (−16.59% vs $5,000 start). The brief wrote ≈ $4170.39 and $5k. Shown with a thousands separator. This replaces the 1:06 PM published equity $4,252.84 (CLI $4,166.70 plus a $86.14 adjustment). That older stamp is not on the card.
-- Open lots 25 · positions 14 (`open_lots=25`, `npos=14`).
-- Fills still about 312. The brief marked this approximate (`~312`). FIFO completed 257 from the 1:06 PM export is not on the card.
+- Workspace `desk-explore-f01` is carried from the prior page.
+- Keep-alive last verified ~4:21 PM PT `HEALTHY_QUIET`. A routine later ran keep-alive again ~7:13 PM PT with no Meik notify. That later run is not a new equity stamp.
+- Equity about $4,170.39 (−16.59% vs $5,000 start) from the 4:21 PM brief. Kept because no fresher number was verified. Shown with a thousands separator.
+- Open lots 25 · positions 14 (`open_lots=25`, `npos=14` on the prior card).
+- Fills about 312. The prior card marked this approximate (`~312`).
 - `NEW_ENTRIES_FROZEN`, disposition-only.
-- `BREAKER_MAX_POSITIONS` n=14>max=8. Shown as 14 > max 8. The 1:15 PM trip time is not restated. The brief gives this breaker as current with the 4:21 PM keep-alive.
+- `BREAKER_MAX_POSITIONS` 14 > max 8. Shown as 14 > max 8.
 - Paper Day-30 hard date 2026-10-17 PT.
 - "Live still needs that date, breakers, and a Meik RED" is the standing gate line from the prior page. Not re-read from `GATES.md` this pass.
-- RLC-01 slot WAITING. The prior 2026-10-03 8:09 AM PT row time is not on the card.
-- D3 logger about 6/30 days. The brief marked this approximate. Day 0 2026-09-28 is not restated.
+- RLC-01 slot WAITING.
+- D3 logger about 6/30 days. The prior brief marked this approximate.
 - ADM-01 study-eligible 0/20.
 - B0-FINAL is the approved incumbent. Live still RED.
 - Paper dashboard link unchanged: https://jamaldenberg.github.io/desk-paper-dash/
 
 ## Stack Scorecard (LIVE)
 
-Verified live state for this refresh. Not re-fetched from the site this pass.
+Verified live state for this refresh. This pass requested the published guide URLs and got HTTP 200.
 
-- North star ≥ $50k/mo is not on the card. "Content ships only on CLIENT-QA GREEN" is carried from the prior page. No revenue figure is on the card.
-- Open PRs: none.
-- Beast #63, Make Teams vs Enterprise, live 2026-10-03 ~10:49 AM PT at /guides/make-teams-vs-enterprise/ (PR #140, SHA 228e102).
+- North star ≥ $50k/mo stays in the section line from the prior page. "Content ships only on CLIENT-QA GREEN" is carried from the prior page. No revenue figure is on the card.
+- Open PRs: none. The brief verified an empty open list.
+- Beast #64, Make pricing explained, is live at https://www.stackscorecard.com/guides/make-pricing-explained/ (prod 200 in the brief; this pass also got 200 on that URL and on https://stackscorecard.com/guides/make-pricing-explained/). The card links the apex host, the same way Beast #63 is linked. PR #141 squash-merged. Merge SHA 85704aed07aed3ecf8ab7cf95b7253f00d224966. The card shows the short SHA 85704ae. Merged ~2026-10-03 ~4:49 PM PT. Card dollars remain em dashes. Enterprise is Talk to sales. Free is 1,000 credits/month. In-flight, cloud-agent, draft-PR, and factory-claimed wording is off the card.
+- Beast #63, Make Teams vs Enterprise, live 2026-10-03 ~10:49 AM PT at /guides/make-teams-vs-enterprise/ (PR #140, SHA 228e102). This pass got HTTP 200 on https://stackscorecard.com/guides/make-teams-vs-enterprise/.
 - Also live, same guides as the prior page: #62 Make Free vs Core, #61 Make Pro vs Teams, #60 Make Core vs Pro, #59 Make credits and operations.
-- Beast #64 at /guides/make-pricing-explained/ is in flight. Cloud agent running. Draft PR pending, so it is not an open PR. Factory claimed ~4:21 PM PT. The path is named in the card and is not linked as a live URL.
 - Frozen iPaaS totals, unchanged: Make 410 · n8n Cloud 368 · Zapier 353 · n8n self-host 382.
 - CTA parameter `pc=stackscorecard`. Stated as the parameter. No URL was built from it.
 
@@ -65,5 +65,5 @@ Vault not on this machine. No fresher check was found. Prior wording kept. Direc
 
 - No company revenue, affiliate payout, or traffic total.
 - No new Stack scores. The card repeats the frozen 410 / 368 / 353 / 382 totals only.
-- The 1:06 PM and 1:17 PM desk equity exports were not re-fetched. They are not on the card.
-- Beast #64 was not opened in a browser. It is in flight, not live.
+- No desk equity newer than the 4:21 PM figure of about $4,170.39. The ~7:13 PM PT keep-alive had no Meik notify and did not supply a number used here.
+- Beast #64 pricing lines (em dashes, Talk to sales, 1,000 credits/month) come from the brief. This pass confirmed the URL is live. It did not re-score the guide.
